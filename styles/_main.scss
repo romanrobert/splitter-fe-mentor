@@ -11,8 +11,9 @@ main {
 header {
   h1 {
     text-transform: uppercase;
-    margin-bottom: 5.25rem;
+    padding-bottom: 5.25rem;
     letter-spacing: 1rem;
+    font-size: 1.5rem;
     color: $very-dark-cyan;
   }
 }
@@ -30,6 +31,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 5.25rem;
 }
 
 .calculator-inputs {
@@ -236,7 +238,7 @@ header {
   font-size: 1.125rem;
   cursor: pointer;
   &:hover {
-    background-color: $bg;
+    background-color: $cyan;
   }
 }
 
@@ -245,11 +247,14 @@ header {
 }
 
 .btn-active {
-  background-color: $bg !important;
+  background-color: $cyan !important;
   color: $very-dark-cyan !important;
 }
 
 @media screen and (max-width: 40rem) {
+  .calculator-wrapper {
+    height: fit-content;
+  }
   .calculator-inputs {
     margin-top: 2rem;
     margin-bottom: 0rem;
@@ -275,7 +280,8 @@ header {
 
   header {
     h1 {
-      margin-bottom: 1rem;
+      margin-bottom: -3rem;
+      margin-top: 20rem;
     }
   }
 
@@ -285,14 +291,15 @@ header {
   }
 
   .calculator-wrapper {
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 2rem;
   }
 
   .calculator-display {
     max-height: 280px;
     width: 90%;
     margin: auto;
-    margin-top: -1rem;
+    margin-top: 1rem;
   }
 
   .tip-ammount-container {

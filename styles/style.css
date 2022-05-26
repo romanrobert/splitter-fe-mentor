@@ -19,8 +19,9 @@ main {
 
 header h1 {
   text-transform: uppercase;
-  margin-bottom: 5.25rem;
+  padding-bottom: 5.25rem;
   letter-spacing: 1rem;
+  font-size: 1.5rem;
   color: #00494d;
 }
 
@@ -49,6 +50,7 @@ header h1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 5.25rem;
 }
 
 .calculator-inputs {
@@ -356,7 +358,7 @@ header h1 {
 }
 
 .reset-btn:hover {
-  background-color: rgba(38, 192, 171, 0.5);
+  background-color: #26c0ab;
 }
 
 .error {
@@ -364,11 +366,16 @@ header h1 {
 }
 
 .btn-active {
-  background-color: rgba(38, 192, 171, 0.5) !important;
+  background-color: #26c0ab !important;
   color: #00494d !important;
 }
 
 @media screen and (max-width: 40rem) {
+  .calculator-wrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .calculator-inputs {
     margin-top: 2rem;
     margin-bottom: 0rem;
@@ -389,20 +396,24 @@ header h1 {
     width: 9.25rem;
   }
   header h1 {
-    margin-bottom: 1rem;
+    margin-bottom: -3rem;
+    margin-top: 20rem;
   }
   .ppl-counter {
     max-width: 90%;
     margin: auto;
   }
   .calculator-wrapper {
-    height: 100vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 2rem;
   }
   .calculator-display {
     max-height: 280px;
     width: 90%;
     margin: auto;
-    margin-top: -1rem;
+    margin-top: 1rem;
   }
   .tip-ammount-container {
     margin: 1rem auto;
@@ -423,14 +434,16 @@ header h1 {
 
 html {
   font-family: "Space Mono", monospace;
-  background-color: rgba(38, 192, 171, 0.5);
+  background-color: #c5e4e7;
 }
 
 body {
   width: 100%;
   max-width: 90rem;
   height: 100vh;
-  max-height: 64rem;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   margin: auto;
 }
 
