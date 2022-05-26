@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Spli <br />tter</h1>
+      </header>
+
+      <div class="calculator-wrapper">
+        <div class="calculator-inputs">
+          <div class="calculator-inputs__bill">
+            <div class="bill__header">
+              <h2>Bill</h2>
+              <p class="bill_error"></p>
+            </div>
+            <input type="number" class="bill" placeholder="0" />
+          </div>
+          <div class="calculator-inputs__tips">
+            <h2>Select tip %</h2>
+            <div class="tips__grid">
+              <button class="tip__5">5%</button>
+              <button class="tip__10">10%</button>
+              <button class="tip__15">15%</button>
+              <button class="tip__25">25%</button>
+              <button class="tip__50">50%</button>
+              <input type="number" placeholder="Custom" class="custom-tip" />
+            </div>
+          </div>
+          <div class="ppl-counter">
+            <div class="ppl-counter__header">
+              <h2>Number of People</h2>
+              <p class="error"></p>
+            </div>
+            <input type="number" class="ppl-input" placeholder="0" />
+          </div>
+        </div>
+
+        <div class="calculator-display">
+          <div class="tip-ammount-container">
+            <div class="tip-ammount">
+              <h2>Tip Ammount</h2>
+              <p>/ person</p>
+            </div>
+            <p class="ammount ammount-tip">$0.00</p>
+          </div>
+          <div class="total-container">
+            <div class="total-ammount">
+              <h2>Total</h2>
+              <p>/ person</p>
+            </div>
+            <p class="ammount total-amount-person">$0.00</p>
+          </div>
+          <div class="reset-btn-wrapper">
+            <button class="reset-btn">Reset</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
