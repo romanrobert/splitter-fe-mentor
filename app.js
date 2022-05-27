@@ -61,7 +61,7 @@ bill.addEventListener("change", () => {
 const calcTip = function (percentages) {
   for (let i = 0; i < percentages.length; i++) {
     percentages[i].addEventListener("click", () => {
-      if (people !== 0 && bill !== 0) {
+      if (people !== 0 && bill !== 0 && people && bill) {
         let value = Number(percentages[i].innerHTML.match(/\d+/));
         console.log(value);
 
